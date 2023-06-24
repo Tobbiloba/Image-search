@@ -1,0 +1,15 @@
+.image-list {
+  columns: 4 240px;
+  column-gap: 12.5px;
+  /* border: 1px solid red; */
+  margin-top: 3rem;
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 100%;
+}
+img {
+  width: 100%;
+  margin-bottom: 15px;
+  /* border: 1px solid red; */
+  border-radius: 1rem;
+}
