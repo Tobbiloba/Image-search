@@ -43,20 +43,20 @@ function App() {
     handleSubmit('random')
   }, [])
   return (
-    <div className="bg-slate-500 pb-[2rem]">
-      <div className='flex px-[1.5rem] lg:px-[10%] lg:justify-between lg:py-[2rem] py-[1rem] md:px-[3.5rem] border flex-col flew-wrap bg-slate-800 text-white lg:flex-row'>
-        <h1 className=' text-xl font-mono font-bold lg:text-3xl'>Image <span className='text-slate-600'>Finder</span></h1>
-        <SearchBar onSubmit={handleSubmit} />
-      </div>
+    <div className="bg-white pb-[2rem] w-[100vw] overflow-x-hidden">
+      {/* <div className='flex px-[1.5rem] l lg:justify-between lg:py-[2rem] py-[1rem] md:px-[3.5rem] border flex-col flew-wrap bg-slate-300 text-white lg:flex-row'> */}
+
+      <SearchBar onSubmit={handleSubmit} />
+      {/* </div> */}
 
       <div className='px-[1.5rem] lg:px-[10%] md:px-[3.5rem]'>
         <SearchOptions onSubmit={handleSubmit} items={search} />
         {/* <ImageCount onSubmit={handleSubmit} items={search} /> */}
-        <div className='mt-[1rem] text-right text-white'>
+        <div className='mt-[1rem] text-right text-slate-700'>
           <h1 className='font-mono text-xl'>Page {pages} of {images.total_pages}</h1>
         </div>
         <ImageList images={images.results} />
-        <div className='flex justify-between md:justify-center md:gap-[1.5rem] lg:text-[24px] font-mono text-white font-bold'>
+        <div className='flex justify-between md:justify-center md:gap-[1.5rem] lg:text-[24px] font-mono text-slate-800 font-bold'>
           <button onClick={prevPage}>Prev</button>
           <button onClick={nextPage}>Next</button>
 
