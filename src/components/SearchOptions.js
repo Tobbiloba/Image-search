@@ -50,7 +50,7 @@ const SearchOptions = ({ onSubmit, items }) => {
                 {options.map((item) => (
                     <li
                         key={item.id}
-                        className={`border rounded-md cursor-pointer text-[18px] lg:text-xl p-2 ${item.option === items ? 'bg-white text-slate-500' : 'text-white'
+                        className={`border rounded-xl font-mono cursor-pointer text-[18px] lg:text-xl p-2 ${item.option === items ? 'bg-slate-500 text-slate-100' : 'text-slate-800'
                             }`}
                         onClick={(e) => { // Fix: Define e as a parameter
                             // setTerm();
