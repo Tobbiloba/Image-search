@@ -25,8 +25,8 @@ const ImageShow = ({ image }) => {
             {showDetails && <div className=' fixed overflow-y-scroll left-0 top-[0rem] px-[1.5rem] py-[1.5rem]  border backdrop-blur-sm bg-black/90 h-[100vh] w-[100vw]'>
                 <img src={image?.urls.small} alt={image.alt_description} className=' cursor-pointer h-[25rem]' />
                 <p className='text-white text-xl font-mono capitalize'>{image.alt_description}</p>
-                <div className='border text-white mt-[2rem]'>
-                    <div className='flex flex-row items-center  border' >
+                <div className='text-white mt-[2rem]'>
+                    <div className='flex flex-row items-center  ' >
                         <img src={image?.user.profile_image.small} alt="profile" className='w-12 h-12' />
                         <h1 className='text-xl ml-[1rem] '>{image.user.name}</h1>
                     </div>
