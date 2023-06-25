@@ -56,7 +56,7 @@ function App() {
           <h1 className='font-mono text-xl'>Page {pages} of {images.total_pages}</h1>
         </div>
         <ImageList images={images.results} />
-        <div className='border flex justify-between md:justify-center md:gap-[1.5rem] lg:text-[24px] font-mono text-white font-bold'>
+        <div className='flex justify-between md:justify-center md:gap-[1.5rem] lg:text-[24px] font-mono text-white font-bold'>
           <button onClick={prevPage}>Prev</button>
           <button onClick={nextPage}>Next</button>
 
